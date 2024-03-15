@@ -1,0 +1,79 @@
+/*
+ᴛʜᴀɴᴋs ᴛᴏ ᴍɪᴋᴜ-ʙᴏᴛᴢ
+ᴛʜᴀɴᴋs ᴛᴏ ᴍɪᴋᴜ-ᴍᴅ
+ᴛʜᴀɴᴋs ᴛᴏ sᴇɪɴsᴏғғᴄ
+ᴛʜᴀɴᴋs ᴛᴏ sᴇɪɴs
+*/
+
+import { watchFile, unwatchFile } from 'fs'
+import chalk from 'chalk'
+import { fileURLToPath } from 'url'
+
+global.owner = [
+  ['6289670540908', 'sᴇɪɴsᴏғғᴄ', true],
+  ['6289670540908']
+] // Nomor Owner
+
+global.mods = ['6289670540908'] 
+global.prems = ['6289670540908']
+
+// apikey
+global.lolkey = 'apikey-seins'
+global.lann = 'apikey-seins'
+// apikeylu di ganti menggunakan apikey yang di dapatkan di website https://api.betabotz.org. contohnya global.lann = 'nans' (contoh). cara mendapatkan apikey. masuk website > scroll ke bawah dan cari harga yang kamu mau ada juga yang free dan tekan > otomatis akan di arahkan untuk registrasi, isi data diri email dll. > kalo sudah klik profil dan di situ akan muncul apikey mu. terima kasih.
+
+global.APIKeys = { // APIKey Here
+  // 'https://website': 'apikey'
+  'https://api-fgmods.ddns.net': 'mhdAnan',
+  'https://api.lolhuman.xyz': 'apikey-seins',
+  'https://api.betabotz.eu.org': 'apikey-seins'
+}
+
+global.APIs = { // API Prefix
+  // name: 'https://website'
+  nrtm: 'https://fg-nrtm.ddns.net',
+  lolkey: 'https://api.lolhuman.xyz',
+  fgmods: 'https://api-fgmods.ddns.net',
+  lann: 'https://api.betabotz.eu.org'
+}
+
+// Watermark
+global.nama = '𝑺𝒆𝒊𝒏𝒔'// nama owner
+global.nomor = '6289670540908' // nomor owner
+global.nans = '𝐌𝐈𝐊𝐔-𝐌𝐔𝐋𝐓𝐈-𝐃𝐄𝐕𝐈𝐂𝐄' // nama bot 
+global.thumb = 'https://telegra.ph/file/01863cdf7af4393996a2e.jpg' // thumbnail bot ( foto menu )
+global.dygp = 'https://chat.whatsapp.com/LDqJYVZEbQY20SyBPsGvXJ'// link group yang ada di menu
+
+// Sticker wm
+global.wm = '© 𝑺𝒆𝒊𝒏𝒔 𝑶𝒇𝒇𝒄'
+global.packname = '𝐌𝐈𝐊𝐔-𝐌𝐃' 
+global.author = '@sᴇɪɴsᴏғғᴄ' 
+global.fgig = 'https://www.instagram.com/seins_kun' // bebas tapi jangan kosong 
+global.fgsc = 'https://github.com/Bintang73/botst4rz' // bebas tapi jangan kosong
+global.fgyt = 'https://sᴇɪɴsᴏғғᴄ.my.id/' // bebas tapi jangan kosong
+global.fgpyp = 'https://sᴇɪɴsᴏғғᴄ.my.id' // bebas tapi jangan kosong
+global.fglog = 'https://telegra.ph/file/7eae9fe06459c1211869d.jpg'
+
+// Other
+global.dana = '6283808400312'
+global.qris = 'https://telegra.ph/file/cc30553e87da10fc01384.jpg'
+global.web = 'Youtube : Seins_Edtz'
+global.email = 'sᴇɪɴsʙᴏᴛᴢ@ɢᴍᴀɪʟ.ᴄᴏᴍ'
+global.lastm = 'ꜱɪᴍᴘʟᴇ ʙᴏᴛ ᴡʜᴀᴛꜱᴀᴘᴘ ʙʏ sᴇɪɴs'
+
+global.wait = '𝑳𝒐𝒂𝒅𝒊𝒏𝒈 𝑺𝒆𝒃𝒆𝒏𝒕𝒂𝒓.....'
+global.rwait = '⌛'
+global.dmoji = '🗿'
+global.done = '☑️'
+global.error = '❌' 
+global.xmoji = '🔥' 
+
+global.multiplier = 69 
+global.maxwarn = '2' // Peringatan maksimum
+
+let file = fileURLToPath(import.meta.url)
+watchFile(file, () => {
+  unwatchFile(file)
+  console.log(chalk.redBright("Update 'config.js'"))
+  import(`${file}?update=${Date.now()}`)
+})
